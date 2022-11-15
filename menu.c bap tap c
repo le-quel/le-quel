@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int menu;
+	do{
+		system("cls");   //xoa dong chu prees tren man hinh
+		printf("Ban muon mua gi\n");
+		printf("***************************************\n");
+		printf("*1. xe sh 170tr:                      *\n");
+		printf("*2. IP14 promax:                      *\n");
+		printf("*3. Giay chelsea boot:                *\n");
+		printf("*4. Ao polo:                          *\n");
+		printf("***************************************\n");
+		printf("Mua gi noi luon");
+		scanf("%d", &menu);
+		switch(menu){
+			case 1: printf("em mua sh nha\n");
+			 system("pause");break;
+			case 2: printf("mua ip 14 promax\n");
+			system("pause");break;
+			case 3: printf("mua giay chelse boot\n");
+			system("pause");break;
+			case 4: printf("mua ao polo ok\n ");
+			 system("pause");break;
+		
+		}
+		
+	}while(menu!=0);  //ko lam mat bang switch case
+	return 0;
+}
